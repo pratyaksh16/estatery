@@ -1,5 +1,5 @@
 .navbar-fixed-wrapper{
-    width: 100%;
+    width: 100vw;
     height: 6vw;
 }
 .navbar-container{
@@ -10,27 +10,95 @@
     position: fixed;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 100vw;
     height: 6vw;
     min-height: 3.5em;
-    box-shadow: 0px 0px 1em rgb(0, 0, 0,0.5);
+    background-color: rgb(248, 247, 253);
+    box-shadow: 0px 0px 1px rgba(177, 177, 177);
+    border-bottom: solid 1px whitesmoke;
 }
 .logo-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20%;
+    width: 16%;
     height: 60%;
     /* border: solid 1px red; */
 }
-.nav-items{
-    width: 70%;
+.nav-items-container{
+    display: flex;
+    align-items: center;
+    width: 76%;
     height: 50%;
     /* border: solid 1px red; */
 }
-.user-info div{
+.nav-item-list{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50vw;
+}
+
+.nav-item-button{
+    cursor: pointer;
+    height: 100%;
+    /* border: solid 1px blue; */
+    padding: 10px 13px;
+    /* margin: 0% 10%; */
+    transition: all 0.2s ease-in-out;
+}
+.nav-item-button:hover{
+    background-color: rgb(232, 230, 250);
+    color:rgb(111, 101, 232);
+}
+.nav-item-button:first-child{
+    background-color: rgb(232, 230, 250);
+    color:rgb(111, 101, 232);
+}
+.nav-item-dropdown{
+    width: 25%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav-item-dropdown > div{
+    width: 8px;
+    height: 8px;
+    border-right: solid 2px black;
+    border-bottom: solid 2px black;
+    transform: rotate(45deg);
+}
+/* .nav-item-dropdown::after{
+    position: absolute;
+    display: block;
+    bottom: 10%;
+    content:"";
+    width: 10px;
+    height: 10px;
+    border-right: solid 2px black;
+    border-bottom: solid 2px black;
+    transform:rotate(45deg);
+    right: 15px;
+    top: 10px;
+} */
+
+.user-info{
+    /* border: solid 1px red; */
+    display: flex;
+    align-items: center ;
+    justify-content: space-evenly;
+    width: 18%;
+    height: 100%;
+}
+.user-info button{
+    font-size: 16px;
+    font-weight: bold;
     user-select: none;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.23s ease-in-out;
 }
 .user-info > .sign-in:hover {
     background-color: rgb(238, 238, 238);
@@ -39,28 +107,21 @@
     box-shadow: 0px 0px 0.5em rgb(0, 0, 0,0.5);
 }
 
-.user-info{
-    /* border: solid 1px red; */
-    display: flex;
-    align-items: center ;
-    justify-content: center;
-    width: 20%;
-}
 .sign-in{
+    background-color: rgb(248, 247, 253);
     color: rgb(111, 101, 232);
     border: solid 1px rgb(111, 101, 232);
-    border-radius: 5px;
-    padding: 4% 5%;
+    padding: 5% 8%;
     cursor: pointer;
     text-decoration: none;
-    margin-right: 5%;
+    border-radius: 8px;
 }
 .sign-up{
     cursor: pointer;
     text-decoration: none;
-    padding: 4% 5%;
+    padding: 5% 8%;
     border: solid 1px rgb(111, 101, 232);
     background-color: rgb(111, 101, 232);
     color: white;
-    border-radius: 5px;
+    border-radius: 8px;
 }
