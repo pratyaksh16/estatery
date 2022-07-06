@@ -29,12 +29,12 @@ const properties = [
   {
     id:1,
     name:"Palm Harbor",
-    img_src:"%PUBLIC_URL%/assets/photo-id-1",
+    img_src:"%PUBLIC_URL%/assets/photo-id-1.jpeg",
     isPopular:true,
     isFav:true,
     address:"2699 Green Valley, Highland Lake, FL",
     cost:2095,
-    noOfBeds:4,
+    noOfBeds:3,
     noOfBathrooms:2,
     dimensions:"5x7m"
   },
@@ -59,7 +59,7 @@ const properties = [
     address:"909 Woodland St, Michigan, IN",
     cost:4550,
     noOfBeds:4,
-    noOfBathrooms:2,
+    noOfBathrooms:3,
     dimensions:"8x10m"
   },
   {
