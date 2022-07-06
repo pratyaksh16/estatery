@@ -45,11 +45,11 @@ function ManualSearch() {
     <div className="manual-search">
       <div className="manual-search-container">
         <div className="location-box after-effect">
-          <span className="location-box-heading">Location</span>
+          <span className="light-text">Location</span>
           <div className="location-box-content">New York, USA</div>
         </div>
         <div className="when-box after-effect">
-          <span className="when-box-heading">When</span>
+          <span className="light-text">When</span>
           <div className="when-box-content filter-dropdown">
             <span>Select Move-in Date</span>
             <BiCalendar 
@@ -59,7 +59,7 @@ function ManualSearch() {
           </div>
         </div>
         <div className="price-box after-effect">
-          <span className="price-box-heading">Price</span>     
+          <span className="light-text">Price</span>     
           <div className="price-box-content filter-dropdown">
             <span>{currPriceRange}</span>
               <ClickAwayListener onClickAway={handlePriceDropdownClickAway}>
@@ -82,7 +82,7 @@ function ManualSearch() {
           </div>
         </div>
         <div className="property-type-box after-effect">
-          <span className="property-box-heading">Property Type</span>
+          <span className="light-text">Property Type</span>
           <div className="property-box-content filter-dropdown">
             <span>{currHouseType}</span>
             <ClickAwayListener onClickAway={handlePropertyTypeDropdownClickAway}>

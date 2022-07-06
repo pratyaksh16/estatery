@@ -54,14 +54,6 @@
 .when-box{
   width: 16em !important;
 }
-.location-box-heading,
-.when-box-heading,
-.price-box-heading,
-.property-box-heading{
-  font-size: 15px;
-  font-weight: bold;
-  color: rgb(180, 180, 180);
-}
 .location-box-content,
 .when-box-content,
 .price-box-content,

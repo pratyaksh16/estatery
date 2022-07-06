@@ -44,14 +44,14 @@ function CheckmarkSearch() {
   };
   return (
     <FormControl sx={{ m: 0, width: 250 }}>
-      <InputLabel id="demo-multiple-checkbox-label">Search Bar</InputLabel>
+      <InputLabel id="demo-multiple-checkbox-label">Quick Search</InputLabel>
       <Select
         labelId="demo-multiple-checkbox-label"
         id="demo-multiple-checkbox"
         multiple
         value={personName}
         onChange={handleChange}
-        input={<OutlinedInput label="Search Bar" />}
+        input={<OutlinedInput label="Quick Search" />}
         renderValue={(selected) => selected.join(", ")}
         MenuProps={MenuProps}
         >
