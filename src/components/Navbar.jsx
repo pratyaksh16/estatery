@@ -35,6 +35,5 @@ export default function Navbar() {
         </section>
       </div>
     </div>
-    
   )
 }

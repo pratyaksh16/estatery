@@ -6,7 +6,8 @@
     width: 100%;
     border-radius: 5px;
     /* background-color: rgb(48,49,54); */
-    background-color: rgb(232, 230, 250);
+    background-color: rgb(232, 230, 250,0.8);
+    backdrop-filter: blur(5px);
 }
 .custom-dropdown-item{
   font-size: small;
@@ -20,5 +21,5 @@
 }
 .custom-dropdown-item:hover{
   color:rgb(111, 101, 232);
-  background-color: rgb(211, 207, 242);
+  background-color: rgb(211, 207, 242,0.6);
 }

@@ -1,8 +1,10 @@
 import React from 'react'
-
-function Property() {
+import 'styles/Property.css'
+function Property({property}) {
   return (
-    <div>Property</div>
+    <div className="property-container">
+      <div>{property.name}</div>
+    </div>
   )
 }
 
