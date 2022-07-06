@@ -58,6 +58,7 @@
 .when-box-heading,
 .price-box-heading,
 .property-box-heading{
+  font-size: 15px;
   font-weight: bold;
   color: rgb(180, 180, 180);
 }
@@ -66,10 +67,11 @@
 .price-box-content,
 .property-box-content{
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(48, 44, 80);
 }
 .filter-dropdown{
+  position: relative;
   margin-right: 1em;
   display: flex;
   align-items: center;

@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import 'assets/styles/MainContent.css'
+import 'styles/MainContent.css'
 import OutlinedInput from "@mui/material/OutlinedInput";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
@@ -7,6 +7,7 @@ import FormControl from "@mui/material/FormControl";
 import ListItemText from "@mui/material/ListItemText";
 import Select from "@mui/material/Select";
 import Checkbox from "@mui/material/Checkbox";
+import { useEditorStore } from 'store/EditorStore';
 
 const ITEM_HEIGHT = 48;
 const ITEM_PADDING_TOP = 8;
@@ -22,22 +23,24 @@ const MenuProps = {
 const names = ["Favourite","Popular"];
 
 function CheckmarkSearch() {
-  console.log("CheckmarkSearch render");
+  // console.log("CheckmarkSearch render");
   const [personName, setPersonName] = useState([]);
+  const setState = useEditorStore(store => store.setState);
 
   const handleChange = (event) => {
     const {
       target: { value }
     } = event;
-    const filterArgs = [...value];
-    if(filterArgs.length===1)
-      filterArgs.push("K")
-    filterArgs.sort();
-    console.log(filterArgs);
+    const tempArr = [...value];
+    if(tempArr.length===1)
+      tempArr.push("K")
+    tempArr.sort();
+    setState('checkmarkSearchFilter',[...tempArr]);
     setPersonName(
       // On autofill we get a stringified value.
       typeof value === "string" ? value.split(",") : value
     );
+
   };
   return (
     <FormControl sx={{ m: 0, width: 250 }}>

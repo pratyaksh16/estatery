@@ -44,6 +44,8 @@
 }
 
 .nav-item-button{
+    display: flex;
+    align-items: center;
     cursor: pointer;
     height: 100%;
     /* border: solid 1px blue; */

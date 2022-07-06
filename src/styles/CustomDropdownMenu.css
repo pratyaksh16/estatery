@@ -1,0 +1,24 @@
+.custom-dropdown-menu{
+    top:1.5em;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 5px;
+    /* background-color: rgb(48,49,54); */
+    background-color: rgb(232, 230, 250);
+}
+.custom-dropdown-item{
+  font-size: small;
+  color:rgb(143, 135, 232);
+  cursor: pointer;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  transition: all 0.2s ease-in-out;
+}
+.custom-dropdown-item:hover{
+  color:rgb(111, 101, 232);
+  background-color: rgb(211, 207, 242);
+}
