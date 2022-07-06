@@ -124,4 +124,4 @@ const properties = [
 //   },
 ]
 
-export {properties,priceRangeList,houseTypeList};
+export {properties,priceRange,priceRangeList,houseTypeList};

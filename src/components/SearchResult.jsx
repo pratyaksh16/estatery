@@ -8,11 +8,13 @@ function SearchResult() {
   // console.log("SearchResult Render")
   const checkmarkSearchFilter = useEditorStore(store => store.checkmarkSearchFilter);
   const manualSearchFilter = useEditorStore(store => store.manualSearchFilter);
+  console.log(checkmarkSearchFilter,manualSearchFilter) //To be removed
   const [filteredProperties, setFilteredProperties] = useState(properties)
   useEffect(() => {
     //Result of filtered properties are decided and stored inside filteredProperties which is an array of objects
 
   })
+  if(false) setFilteredProperties(properties);  //To be removed
   
   if(filteredProperties.length!==0){
     return (
@@ -20,7 +22,7 @@ function SearchResult() {
         <div className="grid-container">
           {properties.map((property)=>{
             return(
-              <div className="grid-item">
+              <div className="grid-item" key={property.id}>
                 <Property property={property}/>
               </div>
             )})
