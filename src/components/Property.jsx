@@ -3,14 +3,14 @@ import {AiFillHeart} from 'react-icons/ai'
 import {BiBed,BiBath} from 'react-icons/bi'
 import {TbDimensions} from 'react-icons/tb'
 import {HiSparkles} from 'react-icons/hi'
-
 import 'styles/Property.css'
 
 function Property({property}) {
+
   return (
     <div className="property-container">
-      <div className="property-image-container">
-        {/* <img url={property.img_src} alt={`${property.name}`}/> */}
+      <div className="property-image-container" >
+        <img src={property.img_src} alt={`${property.name} located ${property.address} at $${property.cost}`}/>
       </div>
       <div className="property-information-container">
         <div className="property-information">
