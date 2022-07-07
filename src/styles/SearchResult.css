@@ -6,7 +6,7 @@
   width: 100%;
   display: grid;
   justify-content: space-evenly;
-  grid-template-columns: auto auto auto;
+  /* grid-template-columns: auto auto auto; */
   margin-top: 3em;
   background-color:transparent;
   column-gap: 2em;

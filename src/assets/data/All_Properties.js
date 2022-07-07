@@ -6,8 +6,8 @@ const priceRange = [
   },
   {
     name:"$500 - $2500",
-    begin:2500,
-    end:5000
+    begin:500,
+    end:2500
   },
   {
     name:"$2500 - $5000",
@@ -29,7 +29,8 @@ const properties = [
   {
     id:1,
     name:"Palm Harbor",
-    img_src:"%PUBLIC_URL%/assets/photo-id-1.jpeg",
+    house_type:"House",
+    img_src:"assets/images/photo-id-1.jpeg",
     isPopular:true,
     isFav:true,
     address:"2699 Green Valley, Highland Lake, FL",
@@ -41,9 +42,10 @@ const properties = [
   {
     id:2,
     name:"Beverly Springfield",
-    img_src:"%PUBLIC_URL%/assets/photo-id-2",
+    house_type:"Flat",
+    img_src:"assets/images/photo-id-",
     isPopular:true,
-    isFav:true,
+    isFav:false,
     address:"2821 Lake Sevilla, Palm Harbor, TX",
     cost:2700,
     noOfBeds:4,
@@ -53,9 +55,10 @@ const properties = [
   {
     id:3,
     name:"Faulkner Ave",
-    img_src:"%PUBLIC_URL%/assets/photo-id-3",
+    house_type:"Villa",
+    img_src:"assets/images/photo-id-",
     isPopular:false,
-    isFav:false,
+    isFav:true,
     address:"909 Woodland St, Michigan, IN",
     cost:4550,
     noOfBeds:4,
@@ -65,7 +68,8 @@ const properties = [
   {
     id:4,
     name:"Palm Harbor",
-    img_src:"%PUBLIC_URL%/assets/photo-id-4",
+    house_type:"House",
+    img_src:"assets/images/photo-id-",
     isPopular:false,
     isFav:false,
     address:"2699 Green Valley, Highland Lake, FL",
@@ -77,9 +81,10 @@ const properties = [
   {
     id:5,
     name:"Palm Harbor",
-    img_src:"%PUBLIC_URL%/assets/photo-id-5",
+    house_type:"Villa",
+    img_src:"assets/images/photo-id-",
     isPopular:false,
-    isFav:false,
+    isFav:true,
     address:"2699 Green Valley, Highland Lake, FL",
     cost:2700,
     noOfBeds:4,
@@ -89,8 +94,8 @@ const properties = [
   {
     id:6,
     name:"Palm Harbor",
-    img_src:"%PUBLIC_URL%/assets/photo-id-6",
-    isPopular:false,
+    img_src:"assets/images/photo-id-",
+    isPopular:true,
     isFav:false,
     address:"2699 Green Valley, Highland Lake, FL",
     cost:2700,
@@ -101,8 +106,9 @@ const properties = [
   {
     id:7,
     name:"Palm Harbor",
-    img_src:"%PUBLIC_URL%/assets/photo-id-7",
-    isPopular:true,
+    house_type:"Villa",
+    img_src:"assets/images/photo-id-",
+    isPopular:false,
     isFav:false,
     address:"2699 Green Valley, Highland Lake, FL",
     cost:2700,
@@ -113,9 +119,9 @@ const properties = [
   {
     id:8,
     name:"Palm Harbor",
-    img_src:"%PUBLIC_URL%/assets/photo-id-8",
-    isPopular:true,
-    isFav:false,
+    img_src:"assets/images/photo-id-",
+    isPopular:false,
+    isFav:true,
     address:"2699 Green Valley, Highland Lake, FL",
     cost:2700,
     noOfBeds:4,

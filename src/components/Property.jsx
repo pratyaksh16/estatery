@@ -10,7 +10,7 @@ function Property({property}) {
   return (
     <div className="property-container">
       <div className="property-image-container">
-        <img url={property.img_src} alt={`${property.name}`}/>
+        {/* <img url={property.img_src} alt={`${property.name}`}/> */}
       </div>
       <div className="property-information-container">
         <div className="property-information">
